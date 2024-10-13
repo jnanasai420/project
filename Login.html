@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<>, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      #all {
+        margin: 100px;
+        width: 300px;
+        height: 250px;
+        padding: 20px;
+      }
+      #cl {
+        background-color: aqua;
+      }
+      #rem {
+        text-align: left;
+      }
+      #for {
+        display: inline-block;
+      }
+      #di {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body id="cl">
+    <center>
+      <div id="all">
+        <fieldset>
+          <legend>Login page</legend>
+          <form action="./Home.html">
+            <h1>Login</h1>
+            <input
+              type="email"
+              placeholder="Email"
+              pattern="[a-z0-9._]+@[a-z]+\.[a-z]{2,4}"
+              required
+            />
+            <br />
+            <br />
+            <input
+              type="password"
+              placeholder="Confirm a Password"
+              pattern="(?=.*[A-Z]{3})(?=.*[a-z]{3,})(?=.*[0-9]{2})(?=.*[@#$%]{2}){8,15}"
+              required
+            />
+            <br /><br />
+            <div id="di">
+              <div id="for">
+                <label for="check">Remember Me</label>
+                <input type="checkbox" id="check" required />
+              </div>
+              <div id="for"><a href="#">Forgot Password?</a></div>
+            </div>
+            <br />
+            <br />
+            <button>Login</button>
+            <br /><br />
+            <span
+              >If you don't have an account?
+              <a href="./signin.html"> Sign Up</a></span
+            >
+          </form>
+        </fieldset>
+      </div>
+    </center>
+  </body>
+</html>
